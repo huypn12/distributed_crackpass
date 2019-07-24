@@ -1,0 +1,22 @@
+<html>
+
+<head>
+<script src="scripts/angular.min.js"></script>
+<script>
+function Hello($scope, $http) {
+    $http.get('http://localhost').
+        success(function(data)) {
+            $scope.json = data;
+        });
+}
+</script>
+</head>
+
+<body>
+<div ng-controller="Hello">
+    <div ng-repeat="json in json">
+        <p>data {{json.value}}</p>
+    </div>
+</div>
+</body>
+</html>

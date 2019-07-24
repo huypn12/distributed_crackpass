@@ -1,0 +1,54 @@
+### Sample user get info
+URI=/user_get_info, method=POST, content-type=application/json
+request:
+{
+    'user_id': 4,
+}
+response:
+{
+    'mesg': "found",
+    'role': 1,
+    'username': 'huypn'
+}
+
+### Sample user change password
+URI=/user_change_passwd, method=POST, content-type=application/json
+{
+    'user_id': 4,
+    'old_password': "oauoaeuo",
+    'new_password': "+)[}*)+[*+)*]]"
+}
+
+### Sample admin get user list
+URI=/admin_get_user_info, method=GET, content-type=application/json
+Response:
+[
+    {
+        'user_id': 4,
+        'role_id': 0,
+        'username': 'huypn',
+        'password': 'aoueoau'
+    },
+    {
+        'user_id': 3,
+        'role_id': 1,
+        'username': 'tungdt',
+        'password': 'aoueoau'
+    },
+]
+
+
+### Sample admin create user
+URI=/admin_create_user, method=POST, content-type=application/json
+Request:
+{
+    'user_name': 4,
+    'password': 'hsaouhsonthue',
+    'role': 1
+}
+Response:
+{
+    'mesg': "OK",
+    'user_id': 6
+}
+
