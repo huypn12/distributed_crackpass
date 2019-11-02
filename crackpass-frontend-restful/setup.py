@@ -6,5 +6,5 @@ setup(name='DummyServer',
       author='Huy Phung',
       author_email='example@example.com',
       url='http://www.python.org/sigs/distutils-sig/',
-      install_requires=['Flask==0.10.1']
+      install_requires=['Flask==1.0']
      )
